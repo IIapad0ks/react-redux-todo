@@ -8,7 +8,7 @@
   },
   "author": "Bohdan Lubenets",
   "license": "ISC",
-  "scripts" : {
+  "scripts": {
     "lint": "eslint .",
     "lint:report": "eslint . -c .eslintrc -f checkstyle > eslint_report.xml || echo 'something going wrong...'",
     "lint:fix": "npm run lint -- --fix"
@@ -20,7 +20,8 @@
     "react-dom": "^15.1.0",
     "react-redux": "^4.4.5",
     "react-tap-event-plugin": "^1.0.0",
-    "redux": "^3.5.2"
+    "redux": "^3.5.2",
+    "redux-actions": "^0.10.0"
   },
   "devDependencies": {
     "babel-core": "^6.10.4",
