@@ -22,6 +22,11 @@ export const TOGGLE_TODO = 'TOGGLE_TODO';
 export const REMOVE_TODO = 'REMOVE_TODO';
 
 /**
+ * @type {string}
+ */
+export const CHANGE_INPUT_TEXT = 'CHANGE_INPUT_TEXT';
+
+/**
  * Add ToDo action creator
  * @function
  * @param {string} text - ToDo text
@@ -44,6 +49,14 @@ export const toggleTodo = createAction(TOGGLE_TODO, index => index);
  * @return {Action}
  */
 export const removeTodo = createAction(REMOVE_TODO, index => index);
+
+/**
+ * Change ToDo Text action creator
+ * @function
+ * @param (string} text - ToDo text
+ * @return {Action}
+ */
+export const changeInputText = createAction(CHANGE_INPUT_TEXT, text => text);
 
 /**
  * @typedef {Object} Action

@@ -9,6 +9,8 @@
   "author": "Bohdan Lubenets",
   "license": "ISC",
   "scripts": {
+    "start": "webpack-dev-server",
+    "build": "webpack",
     "lint": "eslint .",
     "lint:report": "eslint . -c .eslintrc -f checkstyle > eslint_report.xml || echo 'something going wrong...'",
     "lint:fix": "npm run lint -- --fix"
@@ -28,6 +30,7 @@
     "babel-eslint": "^6.0.5",
     "babel-loader": "^6.2.4",
     "babel-preset-es2015": "^6.9.0",
+    "babel-preset-react": "^6.5.0",
     "eslint": "^2.13.1",
     "eslint-config-airbnb": "^9.0.1",
     "eslint-plugin-import": "^1.9.2",
