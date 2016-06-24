@@ -1,5 +1,6 @@
 /**
  * @file ToDo root component
+ * @module todo/components/main
  * @author Bohdan Lubenets <bogdan.lubenets@dev-pro.net>
  */
 

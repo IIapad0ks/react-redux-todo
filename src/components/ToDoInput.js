@@ -1,4 +1,6 @@
 /**
+ * @file ToDOInput
+ * @module todo/components/input
  * @author Bohdan Lubenets <bogdan.lubenets@dev-pro.net>
  */
 
@@ -7,6 +9,11 @@ import TextField from 'material-ui/TextField';
 import FloatingActionButton from 'material-ui/FloatingActionButton';
 import ContentAdd from 'material-ui/svg-icons/content/add';
 
+/**
+ * @classdesc ToDo Input Component
+ * @param {module:todo/components/input~ToDoInputProperties} props
+ * @constructor
+ */
 const ToDoInput = (props) => (
   <div style={{ margin: '10px' }}>
     <TextField
@@ -21,6 +28,10 @@ const ToDoInput = (props) => (
   </div>
 );
 
+/**
+ * ToDoInputProperties description
+ * @type {{isDisabled: *, text: *, onChange: *, onClick: *}}
+ */
 ToDoInput.propTypes = {
   isDisabled: PropTypes.bool.isRequired,
   text: PropTypes.string.isRequired,
@@ -29,3 +40,26 @@ ToDoInput.propTypes = {
 };
 
 export default ToDoInput;
+
+/**
+ * ToDoInput properties
+ * @typedef {Object} ToDoInputProperties
+ * @property {boolean} isDisabled - Add button disable option
+ * @property {string} text - ToDoInput text
+ * @property {module:todo/components/input~onToDoInputChangeHandler} onChange -
+ * ToDoInput text field value change handler
+ * @property {module:todo/components/input~onToDoAddHandler} onClick -
+ * ToDoInput add button click handler
+ */
+
+/**
+ * ToDoInput Change Handler
+ * @typedef {function} onToDoInputChangeHandler
+ * @param {string} text - Current ToDoInput text value
+ */
+
+/**
+ * ToDoInput Add ToDo Handler
+ * @typedef {function} onToDoAddHandler
+ * @param {string} text - Current ToDoInput text value
+ */

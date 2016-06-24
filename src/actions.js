@@ -30,7 +30,7 @@ export const CHANGE_INPUT_TEXT = 'CHANGE_INPUT_TEXT';
  * Add ToDo action creator
  * @function
  * @param {string} text - ToDo text
- * @return {Action}
+ * @return {module:actions~Action}
  */
 export const addTodo = createAction(ADD_TODO, text => text);
 
@@ -38,7 +38,7 @@ export const addTodo = createAction(ADD_TODO, text => text);
  * Toggle ToDo action creator
  * @function
  * @param {number} index - ToDo index in list
- * @return {Action}
+ * @return {module:actions~Action}
  */
 export const toggleTodo = createAction(TOGGLE_TODO, index => index);
 
@@ -46,7 +46,7 @@ export const toggleTodo = createAction(TOGGLE_TODO, index => index);
  * Remove Todo action creator
  * @function
  * @param {number} index - ToDo index in list
- * @return {Action}
+ * @return {module:actions~Action}
  */
 export const removeTodo = createAction(REMOVE_TODO, index => index);
 
@@ -54,7 +54,7 @@ export const removeTodo = createAction(REMOVE_TODO, index => index);
  * Change ToDo Text action creator
  * @function
  * @param (string} text - ToDo text
- * @return {Action}
+ * @return {module:actions~Action}
  */
 export const changeInputText = createAction(CHANGE_INPUT_TEXT, text => text);
 

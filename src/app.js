@@ -1,5 +1,6 @@
 /**
  * @file Application entry point
+ * @module application
  * @author Bohdan Lubenets <bogdan.lubenets@dev-pro.net>
  */
 

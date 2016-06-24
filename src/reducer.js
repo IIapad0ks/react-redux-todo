@@ -1,5 +1,6 @@
 /**
  * @file ToDo List Reducer
+ * @module reducer
  * @author Bohdan Lubenets <bogdan.lubenets@dev-pro.net>
  */
 
@@ -49,9 +50,9 @@ export default handleActions({
 /**
  * Action Handler
  * @typedef {function} ActionHandler
- * @param {State} state - ToDo List current state
+ * @param {module:reducer~State} state - ToDo List current state
  * @param {module:actions~Action} action
- * @return {State} New ToDo List state
+ * @return {module:reducer~State} New ToDo List state
  */
 
 /**
@@ -66,5 +67,5 @@ export default handleActions({
  * @typedef {Object} State
  * @property {Object} input - ToDo Text Input state
  * @property {string} input.text
- * @property {ItemState[]} items - ToDo Item List
+ * @property {module:reducer~ItemState[]} items - ToDo Item List
  */

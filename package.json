@@ -9,11 +9,12 @@
   "author": "Bohdan Lubenets",
   "license": "ISC",
   "scripts": {
-    "start": "webpack-dev-server",
+    "start": "start http://localhost:8080 & webpack-dev-server",
     "build": "webpack",
     "lint": "eslint .",
     "lint:report": "eslint . -c .eslintrc -f checkstyle > eslint_report.xml || echo 'something going wrong...'",
-    "lint:fix": "npm run lint -- --fix"
+    "lint:fix": "npm run lint -- --fix",
+    "jsdoc": "jsdoc ./src -r"
   },
   "dependencies": {
     "babel-polyfill": "^6.9.1",
